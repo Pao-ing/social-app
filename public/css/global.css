@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(125, 64, 7);
+  /* color: white; */
+}
+
+.header_background {
+  width: 1600px;
+  /* border: 1px solid white; */
+  padding: 100px;
+  margin: 0px;
+  background-image: url("leaves.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 1600px;
+  /* background-size: cover;  */
+  /* position: relative; */
+}
+
+h1 {
+  text-align: center;
+  color: rgb(251, 249, 247);
+  text-shadow: 2px 2px 5px red;
+}
+
+h2 {
+  text-align: center;
+  /* text-shadow: 2px 2px 5px black; */
+  color: rgb(251, 249, 247);
+  text-shadow: 2px 2px 5px black;
+}
+a {
+  color: rgb(21, 17, 222);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px red;
+}
+.write-square {
+  width: 400px;
+  background-color: rgb(158, 232, 238);
+  border: 2px solid rgb(158, 232, 238);
+  margin: 20px;
+  padding: 20px;
+}
+
+.posts-square {
+  width: 400px;
+  background-color: rgb(236, 164, 164);
+  border: 2px solid rgb(236, 164, 164);
+  margin: 20px;
+  padding: 20px;
+}
+.friends-square {
+  width: 400px;
+  background-color: rgb(236, 216, 151);
+  border: 2px solid rgb(236, 216, 151);
+  margin: 20px;
+  padding: 20px;
+}
+.menu {
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Write a Post - Mini SNS</title>
+    <link rel="icon" type="image/png" href="Autumn.png" />
+    <link rel="stylesheet" href="css/write.css" />
+  </head>
+  <body>
+    <%-include("header")%>
+    <h1>✍️ Write a New Post</h1>
+
+    <form action="/write" method="post">
+      <!-- <label for="writer">Your Name:</label><br />
+      <input
+        type="text"
+        id="writer"
+        name="writer"
+        placeholder="Enter your name"
+        required
+      /><br /><br /> -->
+
+      <label for="content">Your Post:</label><br />
+      <textarea
+        name="content"
+        id="content"
+        rows="5"
+        cols="40"
+        placeholder="What's on your mind?"
+        required
+      ></textarea
+      ><br /><br />
+
+      <button type="submit">Post</button>
+    </form>
+
+    <br />
+
+    <!-- Link back to home -->
+    <%-include("footer")%>
+  </body>
+</html>

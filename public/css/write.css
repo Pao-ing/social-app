@@ -1,0 +1,61 @@
+h1 {
+  text-align: center;
+}
+form {
+  /* background-image: url("yourialka-marble-7728245.jpg"); */
+  background-image: url(yourialka-marble-7728245.jpg);
+  background-size: cover;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(158, 232, 238);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+body {
+  /* background-image: url("yourialka-marble-7728245.jpg"); */
+  /* background-image: url(aalmeidah-illustration-4695423.jpg); */
+  /* background-image: url(mydask-structure-7486888.jpg);
+  background-size: cover; */
+  background-color: rgb(125, 64, 7);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(4, 0, 255);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+a {
+  color: rgb(43, 116, 226);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+label {
+  color: black;
+  font-size: medium;
+}

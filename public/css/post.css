@@ -1,0 +1,105 @@
+body {
+  /* background-color: rgb(180, 236, 218); */
+  background-color: rgb(125, 64, 7);
+}
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+#123 {
+  display: flex;
+  text-align: center;
+}
+
+#123 a {
+  display: flex;
+}
+
+a {
+  color: rgb(43, 116, 226);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.post {
+  width: 400px;
+  background-color: rgb(238, 215, 194);
+  border: 2px solid gray;
+  margin: 20px;
+  padding: 20px;
+}
+
+hr {
+  width: 400px;
+  margin: 20px auto;
+  border: 0;
+  border-top: 1px solid white;
+}
+.post-list {
+  width: 600px;
+  background-color: rgb(158, 232, 238);
+  /* background-color: rgb(125, 64, 7); */
+  background-image: url(aalmeidah-illustration-4695423.jpg);
+  background-size: cover;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: rgb(4, 0, 255);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.add-comment {
+  padding: 10px 20px;
+  background-color: rgb(55, 108, 108);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.comments p {
+  background-color: rgb(236, 164, 164);
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.comments button {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.comment-count {
+  font-size: 12px;
+  color: #555;
+  margin-top: 5px;
+}

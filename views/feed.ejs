@@ -1,0 +1,25 @@
+<div class="post">
+  <strong><%= post.author %></strong><br />
+  <small><%= post.createdAt.toLocaleString() %></small>
+  <br />
+  <span><%= post.content %></span>
+
+  <!-- Like button -->
+  <br />
+  <button
+    class="like-button"
+    data-id="<%= post.uuid %>"
+    data-liked="<%= post.isLiked %>"
+  >
+    <%= post.isLiked ?"❤️":"🤍" %>
+  </button>
+  <span class="likes-count"><%= post.likes.length %> likes</span>
+
+  <div class="comment-count">Comments(0)</div>
+
+  <input type="text" class="comment-input" placeholder="write a comment..." />
+  <button class="add-comment">Add Comment</button>
+
+  <div class="comments"></div>
+</div>
+<hr />

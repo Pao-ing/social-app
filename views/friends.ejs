@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Friends - Mini SNS</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/friends.css" />
+  </head>
+  <body>
+    <%-include("header") %>
+    <br /><br />
+
+    <div class="add-friend-container">
+      <form action="/friends/search" method="post">
+        <input
+          type="text"
+          id="friendUsername"
+          name="friendUsername"
+          required
+          placeholder="Search for friends..."
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <h2>Friends you found:</h2>
+      <ul>
+        <%findedfriends.forEach(function(friend){ %>
+            <li>
+                <%=friend.username %>
+                <form action="/friends/add" method="post">
+                    <input
+                    type="hidden"
+                    name="friendUsername"
+                    value="<%=friend.username %>"
+                    />
+                    <button type="submit">Add</button>
+                </form>
+            </li>
+            <%});%>
+      </ul>
+    </div>
+    <br />
+
+    <div class="friends-list-container">
+        <h2>🐱 Friends List:</h2>
+        <ul>
+            <%friends.forEach(function(friend){%>
+                <li><%=friend %></li>
+            <%});%>
+        </ul>
+    </div>
+    <br />
+    <%-include("footer")%>
+  </body>
+</html>

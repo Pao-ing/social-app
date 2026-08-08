@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mini SNS - Home</title>
+    <link rel="icon" type="image/png" href="Autumn.png" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="header_background">
+      <h1>Welcome to Mini SNS</h1>
+      <p>Welcome to your first social media playground -- created by me!</p>
+      <p>This is a place where you can share experiences</p>
+    </div>
+
+    <div class="login-container">
+      <h1>Login</h1>
+      <form method="POST" action="/login">
+        <label for="username">username:</label><br />
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter username"
+          required
+        />
+        <label for="password">password:</label><br />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <h2>What do you want to do?</h2>
+    <!-- <ul>
+      <li><a href="write.html" class="write-square">✍️ Write a Post</a></li>
+      <li><a href="posts.html" class="posts-square">📜 View Posts</a></li>
+    </ul> -->
+    <br />
+    <br />
+    <div class="menu">
+      <a href="/write" class="write-square">✍️ Write a Post</a>
+      <a href="/posts" class="posts-square">📜 View Posts</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>View Posts - Mini SNS</title>
+    <link rel="icon" type="image/png" href="Autumn.png" />
+    <link rel="stylesheet" href="css/post.css"/>
+    <link rel="stylesheet" href="css/post.css"/>
+  </head>
+  <body>
+    <a href="/logout">Logout</a>
+    <h1>📜 Recent Posts</h1>
+
+    <div class="post-list">
+
+      <!--Post 1-->
+      <div class="post">
+        <strong>👩‍💻 Alice</strong>
+        <span>Hello, this is my frst post!</span>
+        <div class="comment-count">Comments(0)</div>
+        <br /><br />
+        <input 
+        type="text" 
+        class="comment-input"
+        placeholder="write a comment..."/>
+        <button class="add-comment">Add Comment</button>
+        <div class="comments">
+        </div>
+      </div>
+    <hr />
+
+      <!--Post 2-->
+      <div class="post">
+        <strong>😎 Bob</strong>
+        <span>Today I learned how to create a form in HTML</span>
+        <div class="comment-count">Comments(0)</div>
+        <br /><br />
+        <input 
+        type="text" 
+        class="comment-input"
+        placeholder="write a comment..."/>
+        <button class="add-comment">Add Comment</button>
+        <div class="comments"></div>
+      </div>
+    <hr />
+
+      <!--Post 3-->
+      <div class="post">
+        <strong> &#128030 Pao</strong>
+        <span>Hello, this is a sunset picture! &#128525 </span> <br>
+        <img src="background.png" alt="Sky picture" style="width: 100px;height: 100px;">
+        <div class="comment-count">Comments(0)</div>
+        <br /><br />
+        <input 
+        type="text" 
+        class="comment-input"
+        placeholder="write a comment..."/>
+        <button class="add-comment">Add Comment</button>
+        <div class="comments"></div>
+      </div>
+
+      <br/>
+
+      <div id="123">
+        <a href="/write"> 
+          <button >✍️ Write a post</button>
+        </a>
+      </div>
+      <br />
+    </div>
+    <br />
+    
+    <!--Link back to home-->
+    <a href="/"> 🏠Back to Home</a>
+    </body>
+    <script src="js/posts.js"></script>
+</html>
