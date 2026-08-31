@@ -1,7 +1,7 @@
 h1 {
   text-align: center;
 }
-form {
+.card {
   /* background-image: url("yourialka-marble-7728245.jpg"); */
   background-image: url(yourialka-marble-7728245.jpg);
   background-size: cover;
@@ -9,7 +9,8 @@ form {
   margin: 0 auto;
   padding: 20px;
   background-color: rgb(158, 232, 238);
-  border: 1px solid #ddd;
+  border: none;
+  /* border: 1px solid #ddd; */
   border-radius: 5px;
 }
 

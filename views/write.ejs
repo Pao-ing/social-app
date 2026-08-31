@@ -3,15 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <title>Write a Post - Mini SNS</title>
-    <link rel="icon" type="image/png" href="Autumn.png" />
+    <!-- <link rel="icon" type="image/png" href="Autumn.png" /> -->
     <link rel="stylesheet" href="css/write.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body>
+  <body class="bg-info-subtle">
     <%-include("header")%>
-    <h1>✍️ Write a New Post</h1>
-
-    <form action="/write" method="post">
-      <!-- <label for="writer">Your Name:</label><br />
+    <div class="container py-5">
+      <h1 class="text-center text-primary mb-4">
+        <i class="bi bi-pencil-square"></i> Write a New Post
+      </h1>
+    </div>
+    <div class="card mx-auto" style="max-width: 400px">
+      <div class="card-body">
+        <form action="/write" method="post">
+          <!-- <label for="writer">Your Name:</label><br />
       <input
         type="text"
         id="writer"
@@ -20,19 +34,25 @@
         required
       /><br /><br /> -->
 
-      <label for="content">Your Post:</label><br />
-      <textarea
-        name="content"
-        id="content"
-        rows="5"
-        cols="40"
-        placeholder="What's on your mind?"
-        required
-      ></textarea
-      ><br /><br />
-
-      <button type="submit">Post</button>
-    </form>
+          <label for="content" class="form-label text-primary-emphasis fw-bold"
+            >Your Post</label
+          ><br />
+          <div class="mb-3">
+            <textarea
+              name="content"
+              id="content"
+              class="form-control"
+              rows="5"
+              cols="40"
+              placeholder="What's on your mind?"
+              required
+            ></textarea>
+          </div>
+          <br />
+          <button type="submit" class="btn btn-primary">Post</button>
+        </form>
+      </div>
+    </div>
 
     <br />
 
