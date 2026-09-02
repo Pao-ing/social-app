@@ -26,3 +26,11 @@ button {
 .h2 {
   color: white;
 }
+.header_background {
+  width: 400px;
+  padding: 20px;
+  margin: 0 auto;
+  background-image: url("img/leaves.jpg");
+  background-size: cover;
+  border: none;
+}

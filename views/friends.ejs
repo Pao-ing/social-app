@@ -3,14 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <title>Friends - Mini SNS</title>
-    <link rel="stylesheet" href="/css/global.css" />
+    <!-- <link rel="stylesheet" href="/css/global.css" /> -->
     <link rel="stylesheet" href="/css/friends.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body>
+  <body class="bg-info-subtle">
     <%-include("header") %>
     <br /><br />
-
-    <div class="add-friend-container">
+      <div class="container py-5">
+      <h1 class="text-center text-primary mb-4">
+        <i class="bi bi-people"></i> Friends 
+      </h1>
+    </div>
+    <div class="add-friend-container card mx-auto" style="max-width: 400px">
+      <!-- <div class="card mx-auto" style="max-width: 400px"> -->
+      <div class="card-body">
       <form action="/friends/search" method="post">
         <input
           type="text"
@@ -19,30 +34,32 @@
           required
           placeholder="Search for friends..."
         />
-        <button type="submit">Search</button>
+        <br/><br/>
+        <button type="submit" class="btn btn-primary">Search</button>
       </form>
 
-      <h2>Friends you found:</h2>
+      <h2 class="text-center text-primary">Friends you found </h2>
       <ul>
         <%findedfriends.forEach(function(friend){ %>
             <li>
                 <%=friend.username %>
-                <form action="/friends/add" method="post">
+                <form action="/friends/add" method="post" class="d-inline ms-4">
                     <input
                     type="hidden"
                     name="friendUsername"
                     value="<%=friend.username %>"
                     />
-                    <button type="submit">Add</button>
+                    <button type="submit" class="btn btn-outline-primary bt-sm" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .85rem;"><i class="bi bi-person-plus"></i> Add</button>
                 </form>
             </li>
             <%});%>
       </ul>
+      </div>
     </div>
     <br />
 
-    <div class="friends-list-container">
-        <h2>🐱 Friends List:</h2>
+    <div class="friends-list-container card mx-auto" style="max-width: 400px">
+        <h2 class="text-center text-primary"> <i class="bi bi-person-heart"></i> Friends List </h2>
         <ul>
             <%friends.forEach(function(friend){%>
                 <li><%=friend %></li>

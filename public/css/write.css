@@ -3,7 +3,7 @@ h1 {
 }
 .card {
   /* background-image: url("yourialka-marble-7728245.jpg"); */
-  background-image: url(yourialka-marble-7728245.jpg);
+  background-image: url(/img/yourialka-marble-7728245.jpg);
   background-size: cover;
   width: 400px;
   margin: 0 auto;
